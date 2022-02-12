@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Jeanne Au-Secours (mp3cut.net).mp3-3da40e052c3c2cc31d588cc81688b134.mp3str"
+
+[deps]
+
+source_file="res://citations/Jeanne Au-Secours (mp3cut.net).mp3"
+dest_files=[ "res://.import/Jeanne Au-Secours (mp3cut.net).mp3-3da40e052c3c2cc31d588cc81688b134.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/jai-pas-damis.mp3-8a07c4be3134bc0927f086b097b90fd2.mp3str"
+
+[deps]
+
+source_file="res://citations/jai-pas-damis.mp3"
+dest_files=[ "res://.import/jai-pas-damis.mp3-8a07c4be3134bc0927f086b097b90fd2.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

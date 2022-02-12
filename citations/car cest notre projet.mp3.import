@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/car cest notre projet.mp3-e5f5cbff24fded53ab33a1cc152b1f7c.mp3str"
+
+[deps]
+
+source_file="res://citations/car cest notre projet.mp3"
+dest_files=[ "res://.import/car cest notre projet.mp3-e5f5cbff24fded53ab33a1cc152b1f7c.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

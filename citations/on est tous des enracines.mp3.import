@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/on est tous des enracines.mp3-0689c17bf1d97b2f0b74030cd2da0e8a.mp3str"
+
+[deps]
+
+source_file="res://citations/on est tous des enracines.mp3"
+dest_files=[ "res://.import/on est tous des enracines.mp3-0689c17bf1d97b2f0b74030cd2da0e8a.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

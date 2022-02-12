@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/ZEMMOUR-QUI-FAIT-UN-BRUIT-BIZARRE-AVEC-SA-GORGE.mp3-cd495797cec5274496dc88162e4c64d6.mp3str"
+
+[deps]
+
+source_file="res://citations/ZEMMOUR-QUI-FAIT-UN-BRUIT-BIZARRE-AVEC-SA-GORGE.mp3"
+dest_files=[ "res://.import/ZEMMOUR-QUI-FAIT-UN-BRUIT-BIZARRE-AVEC-SA-GORGE.mp3-cd495797cec5274496dc88162e4c64d6.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

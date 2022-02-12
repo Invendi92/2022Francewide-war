@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/LA POUDRE DE PERLIMPINPIN.mp3-73416b9399bbb0e146fb1a2ba1b026b1.mp3str"
+
+[deps]
+
+source_file="res://citations/LA POUDRE DE PERLIMPINPIN.mp3"
+dest_files=[ "res://.import/LA POUDRE DE PERLIMPINPIN.mp3-73416b9399bbb0e146fb1a2ba1b026b1.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

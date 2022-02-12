@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Vous-pouvez-larchiver-celle-là.mp3-0e417cef0f4a8768b137fe157e3390f3.mp3str"
+
+[deps]
+
+source_file="res://citations/Vous-pouvez-larchiver-celle-là.mp3"
+dest_files=[ "res://.import/Vous-pouvez-larchiver-celle-là.mp3-0e417cef0f4a8768b137fe157e3390f3.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

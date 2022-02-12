@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Euh-nique-ta-mère.mp3-047d926e677c5f619d297fbb0c3c5e2a.mp3str"
+
+[deps]
+
+source_file="res://citations/Euh-nique-ta-mère.mp3"
+dest_files=[ "res://.import/Euh-nique-ta-mère.mp3-047d926e677c5f619d297fbb0c3c5e2a.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

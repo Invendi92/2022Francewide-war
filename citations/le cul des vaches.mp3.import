@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/le cul des vaches.mp3-6396368a0bf7d3acaa716120787b8967.mp3str"
+
+[deps]
+
+source_file="res://citations/le cul des vaches.mp3"
+dest_files=[ "res://.import/le cul des vaches.mp3-6396368a0bf7d3acaa716120787b8967.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0
