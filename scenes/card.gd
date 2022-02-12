@@ -40,13 +40,6 @@ func _ready():
 	# Choose random image set
 	images = sets[int(rand_range(0, 3))]
 	
-	change_image(0)
-	
-	## Choose random name
-	$Button/MarginContainer/HBoxContainer/VBoxContainer/NameAge.text = name_age_arr[int(rand_range(0, name_age_arr.size()))]
-	
-	$ImageContainer/Image.material.set_shader_param("size", $ImageContainer/Image.rect_size)
-	
 func _input(event):
 	if !enabled: return
 	if event is InputEventScreenDrag:
@@ -90,23 +83,14 @@ func _input(event):
 					rect_rotation = 0
 					$Like.modulate = Color("#00ffffff")
 					$Nope.modulate = Color("#00ffffff")
-	
-	
-func change_image(idx):
-	for child in $MarginContainer/HBoxContainer.get_children():
-		child.value = 0
-	$ImageContainer/Image.texture = images[idx]
-	$MarginContainer/HBoxContainer.get_child(idx).value = 100
 
 func _on_PreviousBtn_pressed():
 	if image_idx == 0: image_idx = images.size() - 1
 	else: image_idx -= 1
-	change_image(image_idx)
 
 func _on_NextBtn_pressed():
 	if image_idx == images.size() - 1: image_idx = 0
 	else: image_idx += 1
-	change_image(image_idx)
 
 func _on_Card_gui_input(event):
 	print(event)
