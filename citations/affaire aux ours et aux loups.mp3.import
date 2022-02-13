@@ -11,5 +11,5 @@ dest_files=[ "res://.import/affaire aux ours et aux loups.mp3-405c091cba40aad9b2
 
 [params]
 
-loop=true
+loop=false
 loop_offset=0

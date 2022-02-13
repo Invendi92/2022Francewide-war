@@ -11,5 +11,5 @@ dest_files=[ "res://.import/ZEMMOUR-QUI-FAIT-UN-BRUIT-BIZARRE-AVEC-SA-GORGE.mp3-
 
 [params]
 
-loop=true
+loop=false
 loop_offset=0

@@ -32,13 +32,22 @@ var nope_like_visible_dist = 450
 
 var enabled = false
 
+
 var name_age_arr = ["John, 22", "Gabriella, 100", "Ipo, 33"]
 var images = []
 
 func _ready():
 	randomize()
 	# Choose random image set
-	images = sets[int(rand_range(0, 3))]
+	Options.old = Options.setnumber
+	Options.setnumber = int(rand_range(0, 3)) 
+	images = sets[Options.setnumber]
+	
+	change_image(0)
+	
+	## Choose random name
+	
+	$ImageContainer/Image.material.set_shader_param("size", $ImageContainer/Image.rect_size)
 	
 func _input(event):
 	if !enabled: return
@@ -83,14 +92,20 @@ func _input(event):
 					rect_rotation = 0
 					$Like.modulate = Color("#00ffffff")
 					$Nope.modulate = Color("#00ffffff")
+	
+	
+func change_image(idx):
+	$ImageContainer/Image.texture = images[idx]
 
 func _on_PreviousBtn_pressed():
 	if image_idx == 0: image_idx = images.size() - 1
 	else: image_idx -= 1
+	change_image(image_idx)
 
 func _on_NextBtn_pressed():
 	if image_idx == images.size() - 1: image_idx = 0
 	else: image_idx += 1
+	change_image(image_idx)
 
 func _on_Card_gui_input(event):
 	print(event)

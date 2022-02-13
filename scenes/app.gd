@@ -1,7 +1,6 @@
 extends Control
 
 export var card: PackedScene = preload("res://scenes/card.tscn")
-export var match_scene: PackedScene = preload("res://scenes/matchScreen.tscn")
 
 var next_card = null
 
@@ -24,15 +23,17 @@ func _on_Card_finished():
 	next_card.enabled = true
 
 func on_card_liked(card, im):
-	if randf() < 0.1:
-		# It's a match!
-		var instance = match_scene.instance()
-		$MatchContainer.add_child(instance)
-		instance.set_image(im)
-		instance.connect("keep_swiping", self, "on_keep_swiping")
-	
+	if Options.old == 0:
+		$speedrun.play()
+		if get_node("BottomMenu/HBoxContainer/MarginContainer5/lepen").value < 90 :
+			get_node("BottomMenu/HBoxContainer/MarginContainer5/lepen").value += 10
+	if Options.old == 1:
+		$lesours.play()
+		if get_node("BottomMenu/HBoxContainer/MarginContainer4/sarko").value < 90 :
+			get_node("BottomMenu/HBoxContainer/MarginContainer4/sarko").value += 10
+	if Options.old == 2:
+		$hein.play()
+		if get_node("BottomMenu/HBoxContainer/MarginContainer5/lepen").value < 90 :
+			get_node("BottomMenu/HBoxContainer/MarginContainer5/lepen").value += 10
 func on_card_disliked(card):
 	pass
-	
-func on_keep_swiping():
-	$MatchContainer.get_child(0).call_deferred("queue_free")
