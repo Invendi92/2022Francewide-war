@@ -27,13 +27,31 @@ func on_card_liked(card, im):
 		$speedrun.play()
 		if get_node("BottomMenu/HBoxContainer/MarginContainer5/lepen").value < 90 :
 			get_node("BottomMenu/HBoxContainer/MarginContainer5/lepen").value += 10
+		else:
+			if Options.selected != "lepen" && Options.selected != "zemmour":
+				get_tree().change_scene("res://scenes/end.tscn")
+			else:
+				Options.victory = true
+				get_tree().change_scene("res://scenes/end.tscn")
 	if Options.old == 1:
-		$lesours.play()
+#		$lesours.play()
 		if get_node("BottomMenu/HBoxContainer/MarginContainer4/sarko").value < 90 :
-			get_node("BottomMenu/HBoxContainer/MarginContainer4/sarko").value += 10
+			get_node("BottomMenu/HBoxContainer/MarginContainer4/sarko").value += 90
+		else:
+			if Options.selected != "lasalle":
+				get_tree().change_scene("res://scenes/end.tscn")
+			else:
+				Options.victory = true
+				get_tree().change_scene("res://scenes/end.tscn")
 	if Options.old == 2:
 		$hein.play()
 		if get_node("BottomMenu/HBoxContainer/MarginContainer5/lepen").value < 90 :
 			get_node("BottomMenu/HBoxContainer/MarginContainer5/lepen").value += 10
+		else:
+			if Options.selected != "lepen" && Options.selected != "zemmour":
+				get_tree().change_scene("res://scenes/end.tscn")
+			else:
+				Options.victory = true
+				get_tree().change_scene("res://scenes/end.tscn")
 func on_card_disliked(card):
 	pass

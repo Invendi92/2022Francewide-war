@@ -10,7 +10,7 @@ func _ready():
 	pass # Replace with function body.
 
 func _go_next():
-	get_tree().change_scene("res://end/end.tscn")
+	get_tree().change_scene("res://scenes/app.tscn")
 
 func _on_ButtonMelanchon_pressed():
 	Options.selected = "melanchon"
