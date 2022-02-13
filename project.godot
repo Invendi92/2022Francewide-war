@@ -15,8 +15,12 @@ _global_script_class_icons={
 [application]
 
 config/name="Francewide-war"
-run/main_scene="res://scenes/app.tscn"
+run/main_scene="res://end/end.tscn"
 config/icon="res://icon.png"
+
+[autoload]
+
+Options="*res://scenes/options.gd"
 
 [display]
 
