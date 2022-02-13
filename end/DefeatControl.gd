@@ -1,4 +1,4 @@
-extends TextureButton
+extends Control
 
 
 # Declare member variables here. Examples:
@@ -8,8 +8,8 @@ extends TextureButton
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	var button = Button.new()
-	button.connect("button_down", Control, "_set_lepen")
+	if Options.victory == false:
+		visible = true
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
