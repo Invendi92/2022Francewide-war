@@ -5,31 +5,33 @@ extends Control
 # var a = 2
 # var b = "text"
 
-
-var selected = ""
-
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	pass # Replace with function body.
 
-func _select_melanchon():
+func _go_next():
+	get_tree().change_scene("res://end/end.tscn")
+
+func _on_ButtonMelanchon_pressed():
 	Options.selected = "melanchon"
+	_go_next()
 
-func _select_lassalle():
+func _on_ButtonLassalle_pressed():
 	Options.selected = "lassalle"
+	_go_next()
 
-func _select_lepen():
+func _on_ButtonLepen_pressed():
 	Options.selected = "lepen"
+	_go_next()
 
-func _select_zemmour():
+func _on_ButtonZemmour_pressed():
 	Options.selected = "zemmour"
+	_go_next()
 
-func _select_hidalgo():
-	Options.selected = "hidalgo"
-
-func _select_macron():
+func _on_ButtonMacron_pressed():
 	Options.selected = "macron"
+	_go_next()
 
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-#func _process(delta):
-#	pass
+func _on_ButtonHidalgo_pressed():
+	Options.selected = "hidalgo"
+	_go_next()
